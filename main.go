@@ -21,10 +21,10 @@ var (
 )
 
 func initFlags() {
-	flag.StringVar(&sourceDir, "source", "./test_data", "./source")
-	flag.StringVar(&resultFile, "result", "./result_test.csv", "./result.csv")
-	flag.IntVar(&limit, "limit", 30, "1000")
-	flag.IntVar(&idLimit, "maxObject", 3, "20")
+	flag.StringVar(&sourceDir, "source", "./source", "source")
+	flag.StringVar(&resultFile, "result", "./result.csv", "result.csv")
+	flag.IntVar(&limit, "limit", 1000, "1000")
+	flag.IntVar(&idLimit, "maxObject", 20, "20")
 	flag.Parse()
 }
 
